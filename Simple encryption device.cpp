@@ -23,12 +23,13 @@ int main()
 		else if(a[i]>='d'&&a[i]<='z'||a[i]>='D'&&a[i]<='Z') a[i]-=3;//Otherwise, handle it normally
 		//Punctuation marks are not processed
 	}
-	cout<<"The encrypted text is:"<<endl;
+	cout<<"The encrypted text is:"<<endl<<endl;
 	for(int i=a.size()-1;i>-1;i--)
 	{
 		//Store and output in reverse order
 		cout<<a[i];
 	}
+	cout<<endl<<endl<<"Decryption complete, close the window to end the program:)";//Use a few more carriage returns to make it more aesthetically pleasing
 	cin>>b;
 	return 0;
 }
